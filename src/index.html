@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <title>Bootstrap 4 Starter Pack</title>
+</head>
+
+<body id="main-body">
+  <nav class="navbar bg-light navbar-light fixed-top navbar-expand-sm">
+    <div class="container">
+      <a href="" class="navbar-brand">TheTechGuy</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-items">
+            <a href="#showcase" class="nav-link">Home</a>
+          </li>
+          <li class="nav-items">
+            <a href="#info1" class="nav-link">About</a>
+          </li>
+          <li class="nav-items">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="showcase">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 showcase-left">
+          <img src="../img/image1.jpg">
+        </div>
+        <div class="col-md-6 col-sm-6 showcase-right">
+          <h1>Welcome to TheTechGuy</h1>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus atque consequuntur ex. Consectetur delectus qui molestias enim, praesentium, dolorem cum illum distinctio quod asperiores, fuga quibusdam ipsam itaque culpa consequuntur.</p>
+          <button class="btn btn-outline-secondary button">Find out more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonial">
+    <div class="container">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolores quos culpa voluptatum assumenda fugit molestias harum, unde quidem quibusdam, odio, repellendus, pariatur vitae mollitia maxime nisi a fugiat?"</p>
+      <p class="customer">- TheTechGuy</p>
+    </div>
+  </section>
+
+  <section id="info1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 info-left">
+          <img src="../img/image2.png">
+        </div>
+        <div class="col-md-6 col-sm-6 info-right">
+          <h2>Explore the World</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, velit expedita deserunt doloribus distinctio accusamus vitae, accusantium, in fuga, tenetur at placeat magnam cum debitis earum reprehenderit eveniet tempora saepe!</p>
+          <button class="btn btn-outline-primary">Explore!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 info-left">
+          <h2>Info Block 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, velit expedita deserunt doloribus distinctio accusamus vitae, accusantium, in fuga, tenetur at placeat magnam cum debitis earum reprehenderit eveniet tempora saepe!</p>
+        </div>
+        <div class="col-md-6 col-sm-6 info-right">
+          <h2>Info Block 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, velit expedita deserunt doloribus distinctio accusamus vitae, accusantium, in fuga, tenetur at placeat magnam cum debitis earum reprehenderit eveniet tempora saepe!</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-5">
+          <div class="card bg-primary text-center card-form">
+            <div class="card-body card-form">
+              <h3>Get fixed today!</h3>
+              <p>Kindly fill out this form.</p>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Issue">
+                </div>
+                <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-sm-7">
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p class="text-center"> TheTechGuy &copy; 2017</p>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar',{
+      duration: 2000,
+      origin: 'bottom'
+    });
+    sr.reveal('.showcase-left',{
+      duration: 2000,
+      origin: 'top',
+      distance: '300px'
+    });
+    sr.reveal('.showcase-right',{
+      duration: 2000,
+      origin: 'right',
+      distance: '300px'
+    });
+    sr.reveal('.button',{
+      duration: 2000,
+      delay: 2000,
+      origin: 'bottom',
+
+    });
+    sr.reveal('#testimonial div',{
+      duration: 2000,
+      origin: 'bottom',
+
+    });
+    sr.reveal('.info-left',{
+      duration: 2000,
+      origin: 'left',
+      viewFactor: 0.2,
+
+    });
+    sr.reveal('.info-right',{
+      duration: 2000,
+      origin: 'right',
+      viewFactor: 0.2,
+
+    });
+  </script>
+  <script>
+  $(function() {
+    // Smooth Scrolling
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+</body>
+<script src="http://localhost:35729/livereload.js">
+</script>
+
+</html>
